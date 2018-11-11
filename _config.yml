@@ -72,3 +72,5 @@ collections:
   posts:
     permalink: /blog/:title/
     output: false
+
+google_analytics: UA-38011507-1
