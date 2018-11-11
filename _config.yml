@@ -1,18 +1,21 @@
 # Site settings
-title: Jekyll Doc Theme
-email: your-email@domain.com
+title: Workspace
+email: kkamenet@gmail.com
 description: >
-  Jekyll Template for Project Websites
-  providing documentation and blog post pages.
+  개발하면서 사는 내용을 작성했습니다
 
-baseurl: "/jekyll-doc-theme" # the subpath of your site, e.g. /blog/
-url: https://aksakalli.github.io/jekyll-doc-theme # the base hostname & protocol for your site
-git_address: https://github.com/aksakalli/jekyll-doc-theme
-git_edit_address: https://github.com/aksakalli/jekyll-doc-theme/blob/gh-pages
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: http://localhost:4000 # the base hostname & protocol for your site
+git_address: https://github.com/kkame/blog
+git_edit_address: https://github.com/kkame/blog/blob/gh-pages
+
+github: https://github.com/kkame
+facebook: https://www.facebook.com/profile.php?id=100001411952158
+
 
 # theme options from https://bootswatch.com/
 # comment out this to use default Bootstrap
-bootwatch: paper
+bootwatch: custom
 
 # Build settings
 markdown: kramdown
@@ -29,28 +32,43 @@ exclude:
   - .idea/
   - .gitignore
   - README.md
-timezone: Europe/Berlin
-defaults:
-- scope:
-    path: _posts
-    type: posts
-  values:
-    layout: post
-    sectionid: blog
 
-- scope:
-    path: _docs
-    type: docs
-  values:
-    layout: docs
-    sectionid: docs
-    seo:
+timezone: Asia/Seoul
+
+defaults:
+
+  - scope:
+      path: _posts
+      type: posts
+    values:
+      layout: post
+      sectionid: blog
+
+  - scope:
+      path: _docs
+      type: docs
+    values:
+      layout: docs
+      sectionid: docs
+      seo:
+        type: "WebPage"
+
+  - scope:
+      path: _works
+      type: works
+    values:
+      layout: docs
+      sectionid: works
+      seo:
       type: "WebPage"
 
 collections:
   docs:
     permalink: /:collection/:path/
     output: true
+  works:
+    permalink: /:collection/:path/
+    output: false
   posts:
-    permalink: /blog/:year/:month/:day/:title/
-    output: true
+    permalink: /blog/:title/
+    output: false

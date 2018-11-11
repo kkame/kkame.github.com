@@ -5,6 +5,8 @@
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 
+//$font-family-base : "나눔고딕" !default
+//$link-color: #2c3e50 !default;
 
 
 @import
@@ -41,23 +43,37 @@ body {
 
 
 .header-container {
-  background-color: black;
-  background: url('../img/bg.jpg') no-repeat 50% 0;
+  background: url('/img/adult-book-business-297755.jpg') no-repeat 50% 0;
   color: #fff;
-
-  h1 {
-    color: #fff;
-  }
-  // background-attachment: fixed;
+  background-attachment: fixed;
   background-size: cover;
   background-position: center 36%;
   margin-top: -37px;
+
+  >div{
+    min-height:100vh;
+    background:rgba(0, 0, 0, 0.70);
+  }
+
+  .container .row { margin: 50px;}
+
+  .social{
+    font-size:3rem;
+  }
+
+  p{
+    font-size:1em;
+  }
+
+  a{
+    color:white;
+  }
 }
 .navbar-container {
   font-size: 16px;
 }
 .page-content {
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 .footer {
   position: absolute;
@@ -73,6 +89,9 @@ body {
   li a.active {
     font-weight: bold;
   }
+  li a{
+    color:#607d8b;
+  }
 }
 *[id]:before {
   display: block;
@@ -83,4 +102,44 @@ body {
 }
 .navbar-form .has-feedback .form-control-feedback{
   top:10px
+}
+
+#markdown-content-container{
+  font-size:16px;
+  color:#24292e;
+  line-height:1.8;
+
+  h1,.h1{
+    padding-bottom:.3em;
+    border-bottom:1px solid #eaecef;
+    font-size:2em;
+    font-weight:600;
+  }
+  h2,.h2{
+    font-size:1.5em;
+    border-bottom:1px solid #eaecef;
+    padding-bottom:.3em;
+    font-weight:600;
+  }
+
+  h3,.h3{
+    font-size:1.25em;
+    padding-bottom:15px;
+    font-weight:600;
+  }
+
+  h4,.h4{
+    font-weight:600;
+    font-size:1em;
+    padding-bottom:15px;
+  }
+  .highlight{
+    background:#f5f5f5;
+  }
+
+}
+
+.inner-content{
+  text-align:center;
+  font-size:16px;
 }

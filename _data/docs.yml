@@ -1,11 +1,41 @@
-- title: Getting Started
+- title: 개요
   docs:
-  - home
-  - themes
-  - customization
+  - intro #/intro/intro.md
+  - environment #/intro/environment.md
 
-- title: Examples
+- title: 개발환경 구성
   docs:
-  - cheatsheet
-  - font-awesome
-  - bootstrap
+  - vcs #/intro/vcs.md
+  - editor #/intro/editor.md
+  # - convention #개발 규칙 , Convention
+  # - install #Ubuntu, Docker, Git, Zsh, docker
+  # - Project clone, Db Clone
+  # - mysql workbench
+  # - phpstorm + docker
+  - composer #/backend/composer.md
+
+
+- title: 레거시 환경 개선
+  docs:
+   # - 날코딩을 CI로 #/backend/framework.md
+   - testing #/backend/testing.md
+
+
+
+#- title: 테스트, 통합, 빌드, 배포
+#  docs:
+#  - jenkins
+#  - aws
+#  - elk
+
+
+#- title: 프로젝트 관리하기
+#  docs:
+  # - jira
+  # - confluence
+
+
+#- title: 마케팅
+#  docs:
+#  - gtm
+#  - ga
